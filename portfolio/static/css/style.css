@@ -1,0 +1,337 @@
+
+html{
+    position: relative;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    background-color: transparent;
+}
+
+.main-page-content{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.home{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+.home-content{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.home-content-main {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+    z-index: 11;
+}
+.home-content-main:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.68);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.home-row {
+    z-index: 2;
+    position: relative;
+}
+.home-text{
+    width: 100%;
+    color: #fff;
+}
+.home-text h3{
+    font-size: 30px;
+	margin-top: 50px;
+    font-weight: 500;
+}
+
+.home-text h2{
+
+	font-size: 36px;
+	font-weight: 600;
+	font-family: Lora;
+	margin-top: 16px;
+	text-transform: uppercase;
+}
+.typewriter h1{
+	color: #fff;
+	font-size: 28px;
+	margin-top: 16px;
+	font-weight: 300;
+	margin-bottom: 16px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+
+.home-icon-grid{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.home-icon{
+    position: relative;
+    z-index: 1;
+}
+.home-class {
+    padding-left: 0px;
+    display: inline-flex;
+    list-style: none;
+    margin: 0px;
+}
+.home-class li{
+    margin: 0px;
+}
+.home-class li a {
+    font-size: 20px;
+    color: #4da6ff;
+    text-align: center;
+    margin-right: 12px;
+    float: left;
+    height: 33px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+}
+.home-class li a:hover {
+    color: #fff;
+    background-color: #4da6ff;
+}
+.nav-item:hover a{
+	color: #4da6ff !important;
+}
+.nav-item .active{
+	color: #4da6ff !important;
+}
+/*........................ About ............ */
+.about{
+	width: 100%;
+	position: relative;
+}
+.about-content{
+	margin-top: -11px;
+}
+
+/*...............our service...........*/
+.services {
+	width: 100%;
+	padding: 44px 0 20px;
+	position: relative;
+}
+.rowsetting{
+  margin: 20px 0px !important;
+}
+
+.imgsetting{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.bg-primary{
+	background: #4da6ff !important
+}
+
+.fa-shopping-cart,
+.fa-laptop,
+.fa-cogs{
+  margin-top: 20px;
+}
+
+.rowsetting h2{
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.rowsetting p{
+  padding: 10px;
+
+}
+
+
+/* ...................... Portfolio .........................*/
+.portfolio {
+	width: 100%;
+	padding: 48px 0 90px;
+	position: relative;
+}
+
+
+.portfolio-img {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-img img {
+	width: 100%;	
+}
+.portfolio-social  h3 {
+	display: inline-block;
+}
+
+.portfolio-social h3 {
+	font-size: 22px;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 0px;
+}
+.portfolio-social a {
+	font-size: 25px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1px;
+    padding: 0px;
+	text-decoration: none;
+}
+.portfolio-img:hover .portfolio-social > h3 {
+	visibility: visible;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	opacity: 1;
+}
+.portfolio-img:hover .portfolio-social > p {
+	visibility: visible;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	opacity: 1;
+}
+.portfolio-social {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: #4da6ff;
+	min-height: 100%;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	position: absolute;
+	text-align: center;
+	top: 0;
+	-webkit-transform: perspective(700px) rotateX(90deg);
+	transform: perspective(700px) rotateX(90deg);
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	visibility: hidden;
+	width: 100%;
+}
+.portfolio-img:hover .portfolio-social {
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	opacity: 1;
+	-webkit-transform: perspective(700px) rotateX(0deg);
+	transform: perspective(700px) rotateX(0deg);
+	visibility: visible;
+}
+
+.portfolio-text  a {
+	margin-bottom: 0;
+	color: black;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Lora', serif;
+    letter-spacing: 1px;
+	font-weight: 600;
+}
+.portfolio-text  a:hover{
+	color: #4da6ff;
+	text-decoration: none;
+}
+
+
+/* 
+===================================== 
+10. testimonials
+===================================== 
+*/
+
+.testimonial {
+	width: 100%;
+	background: #fff;
+	padding:0px 0 30px;
+	position: relative;
+}
+
+
+.testimonial:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.testimonial-grid {
+    width: 100%;
+    position: relative;
+    z-index: 111;
+}
+.testimonial-client{
+	margin-top: 90px;
+	
+}
+.testimonial-client h5{
+	margin-top: 30px;
+	color: #fff;
+	font-weight: bold;
+	
+}
+.testimonial-client p{
+	margin-top: 30px;
+	color: #fff;
+	line-height: 30px;
+	margin-bottom: 70px;
+}
+.carousel-inner{
+  width: 70% !important;
+  margin: 0 auto !important;
+}
+.stars {
+    margin-top: 27px;
+    margin-bottom: 9px;
+}
+.test-icon {
+    color: #4da6ff;
+    font-size: 18px;
+}
+
+/* . . . . . . . . . Contact . . . . . . . */
+.contact{
+	width: 100%;
+	padding: 60px 0 50px;
+	background: #fff;
+	position: relative;
+}
+
+
+
+footer{
+	background: #212529;
+	color: #fff;
+	height: 56px;
+}
